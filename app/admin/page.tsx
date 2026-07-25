@@ -1,5 +1,6 @@
 'use client';
 import { useState, useEffect, useRef } from 'react';
+import Footer from '@/components/Footer.js';
 
 export default function AdminPanel() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -293,6 +294,7 @@ export default function AdminPanel() {
         </div>
 
       </div>
+      <Footer />
     </div>
   );
 }
