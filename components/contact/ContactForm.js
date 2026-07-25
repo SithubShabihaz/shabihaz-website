@@ -79,7 +79,7 @@ export default function ContactFormWithValidation() {
 
       try {
         // Yahan apna Google Apps Script ka asli Web App URL paste karein
-        const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyGB-OJ4aqBFJIoZhOsE_ZBevn5sCy8HtdKE26B-l47F8rmammQUOsU6PnpDgFiXLT1sg/exec';
+        const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyhvHBdMs9XA6OpFkFt48k4JrJW4a6B1b1Pi_oimiGbhdwDKJbkQKpOR2KFaOgdqJUZGQ/exec';
 
         const response = await fetch(GOOGLE_SCRIPT_URL, {
           method: 'POST',
