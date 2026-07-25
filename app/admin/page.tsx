@@ -46,6 +46,11 @@ export default function AdminPanel() {
     if (localStorage.getItem('admin_logged_in') === 'true') {
       setIsLoggedIn(true);
     }
+    
+    // Check if sound was previously enabled by the user
+    if (localStorage.getItem('admin_sound_enabled') === 'true') {
+      setAudioEnabled(true);
+    }
   }, []);
 
   // Real-time polling for both Calendly & Google Sheets
@@ -203,6 +208,7 @@ export default function AdminPanel() {
             <button
               onClick={() => {
                 setAudioEnabled(true);
+                localStorage.setItem('admin_sound_enabled', 'true');
                 playNotificationSound();
               }}
               className="bg-green-600 hover:bg-green-500 text-white px-3 py-1.5 rounded-lg text-xs font-semibold animate-bounce cursor-pointer"
