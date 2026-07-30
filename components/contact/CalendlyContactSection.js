@@ -48,7 +48,7 @@ export default function StandaloneCalendlySection() {
     });
 
     window.Cal.ns["discovery-call"]("ui", {"hideEventTypeDetails":false,"layout":"month_view"});
-    
+     
   }, []);
 
   if (!isMounted) {
@@ -128,11 +128,11 @@ export default function StandaloneCalendlySection() {
             }
           `}} />
 
-          {/* Cal.com Target Container mapped with exact height boundaries */}
+          {/* Cal.com Target Container - Responsive Height (700px on Mobile, 500px on Desktop) */}
           <div 
             id="my-cal-inline-discovery-call" 
-            className="w-full rounded-2xl" 
-            style={{ minWidth: '320px', height: '500px', overflow: 'hidden' }}
+            className="w-full rounded-2xl h-[700px] sm:h-[580px] lg:h-[500px]" 
+            style={{ minWidth: '320px', overflow: 'hidden' }}
           ></div>
 
         </div>
