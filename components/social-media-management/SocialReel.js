@@ -9,8 +9,8 @@ const MobileMockupCard = ({ data, onPlay }) => {
   return (
     <div className="w-full flex flex-col items-start group">
       
-      {/* Outer Card Wrapper */}
-      <div className="w-full relative bg-neutral-900/40 border border-white/15 rounded-3xl p-6 sm:p-8 shadow-[0_20px_50px_rgba(0,0,0,0.8)] overflow-hidden flex flex-col items-center justify-start aspect-[4/3] group-hover:border-white/30 transition-all duration-300">
+      {/* Outer Card Wrapper (Shadow Removed) */}
+      <div className="w-full relative bg-neutral-900/40 border border-white/15 rounded-3xl p-6 sm:p-8 overflow-hidden flex flex-col items-center justify-start aspect-[4/3] group-hover:border-white/30 transition-all duration-300">
         
         {/* CSS-Built iPhone Mockup */}
         <div className="relative w-[160px] sm:w-[190px] h-[380px] sm:h-[420px] bg-neutral-950 rounded-t-[42px] border-[4px] border-b-0 border-neutral-700 shadow-2xl overflow-hidden flex flex-col items-center translate-y-6 sm:translate-y-8 shrink-0">
@@ -51,7 +51,7 @@ const MobileMockupCard = ({ data, onPlay }) => {
 
       </div>
 
-      {/* Description Text Below Card */}
+      {/* Title (Pure White) and Description Below Card */}
       <div className="mt-4 text-left w-full px-1 space-y-1">
         <h3 className="text-sm font-black text-white uppercase tracking-wider font-rajdhani">
           {data.hook}
@@ -77,7 +77,7 @@ export default function ShortsFrameworksSection() {
       hook: "Cinematic Architecture Reels",
       framework: "Immersive vertical video showcases capturing high-end design aesthetics to secure premium inquiries.",
       videoUrl: `${process.env.NEXT_PUBLIC_MEDIA_URL}/Social-Media-Images/ArchitectureVideo.webm`,
-      thumbnailUrl: `${process.env.NEXT_PUBLIC_MEDIA_URL}/Social-Media-Images/ArchitectureThumb.webp` // Aap apni thumbnail image ka path yahan adjust kar sakti hain
+      thumbnailUrl: `${process.env.NEXT_PUBLIC_MEDIA_URL}/Social-Media-Images/ArchitectureThumb.webp`
     },
     {
       id: 2,
