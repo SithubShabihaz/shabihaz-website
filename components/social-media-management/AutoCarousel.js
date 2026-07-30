@@ -19,8 +19,8 @@ const CarouselCard = ({ data }) => {
   return (
     <div className="w-full flex flex-col items-start group">
       
-      {/* Outer Card Wrapper */}
-      <div className="relative w-full rounded-2xl bg-black border border-white/20 p-4 shadow-[0_25px_60px_rgba(0,0,0,0.8)] overflow-hidden group-hover:border-white/40 transition-all duration-300">
+      {/* Outer Card Wrapper (Shadow Removed) */}
+      <div className="relative w-full rounded-2xl bg-black border border-white/20 p-4 overflow-hidden group-hover:border-white/40 transition-all duration-300">
         
         {/* Full Width & Height Image Container */}
         <div className="w-full h-[250px] sm:h-[280px] bg-[#0a0a0c] border border-black/40 rounded-xl relative flex items-center justify-center overflow-hidden">
@@ -59,7 +59,7 @@ const CarouselCard = ({ data }) => {
 
       </div>
 
-      {/* Title and Description Below Card */}
+      {/* Title (Pure White) and Description Below Card */}
       <div className="mt-4 text-left w-full px-1 space-y-1">
         <h3 className="text-sm font-black text-white uppercase tracking-wider font-rajdhani">
           {data.hook}
