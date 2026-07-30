@@ -113,7 +113,7 @@ export default function StandaloneCalendlySection() {
         {/* ================= RIGHT SIDEBOARD PANEL: STANDALONE CAL.COM INTERFACE ================= */}
         <div className="lg:col-span-8 w-full overflow-hidden self-start">
 
-          {/* Inline Webkit Overrides adapted for Cal.com element exclusively */}
+          {/* Inline Webkit & Cal.com Internal Padding Overrides */}
           <style dangerouslySetInnerHTML={{
             __html: `
             #my-cal-inline-discovery-call {
@@ -126,12 +126,17 @@ export default function StandaloneCalendlySection() {
               width: 0 !important;
               height: 0 !important;
             }
+            /* Targeting Cal.com iframe internal wrapper to eliminate excess top/bottom gaps */
+            #my-cal-inline-discovery-call iframe {
+              margin-top: -10px !important;
+              margin-bottom: -10px !important;
+            }
           `}} />
 
-          {/* Cal.com Target Container - Responsive Height (700px on Mobile, 500px on Desktop) */}
+          {/* Cal.com Target Container - Responsive Height */}
           <div 
             id="my-cal-inline-discovery-call" 
-            className="w-full rounded-2xl h-[1900px] sm:h-[580px] lg:h-[500px]" 
+            className="w-full rounded-2xl h-[1900px] sm:h-[540px] lg:h-[480px]" 
             style={{ minWidth: '320px', overflow: 'hidden' }}
           ></div>
 
