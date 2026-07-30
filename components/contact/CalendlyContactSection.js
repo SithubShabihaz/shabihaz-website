@@ -136,7 +136,7 @@ export default function StandaloneCalendlySection() {
           {/* Cal.com Target Container - Responsive Height */}
           <div 
             id="my-cal-inline-discovery-call" 
-            className="w-full rounded-2xl h-[650px] sm:h-[540px] lg:h-[480px]" 
+            className="w-full rounded-2xl h-[950px] sm:h-[540px] lg:h-[480px]" 
             style={{ minWidth: '320px', overflow: 'hidden' }}
           ></div>
 
