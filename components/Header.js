@@ -210,7 +210,7 @@ export default function Header() {
 
                     <div className="grid grid-cols-1 gap-3 pt-2">
                         <Link
-                            href="https://calendly.com/shabihazofficial/discovery-call"
+                            href="https://cal.com/shabihaz/discovery-call"
                             className="w-full font-rajdhani flex items-center justify-center px-4 py-2.5 rounded-lg bg-[#ffff39] text-sm font-light text-black transition-all"
                         >
                             Book A Discovery Call
