@@ -94,7 +94,7 @@ function CloudPulseGrid({
 
       // ================= GRID LINES & CIRCLES OPACITY SET TO 0.1 =================
       ctx.strokeStyle = `rgba(${rgb},0.1)`;
-      ctx.lineWidth = 2;
+      ctx.lineWidth = 1.2;
       ctx.beginPath();
       for (let c = 0; c <= cols; c++) {
         ctx.moveTo(c * gridSpacing, 0);
@@ -106,12 +106,12 @@ function CloudPulseGrid({
       }
       ctx.stroke();
 
-      // Bold intersection dots with 0.1 opacity
+      // Intersection dots / circles with 0.1 opacity
       ctx.fillStyle = `rgba(${rgb},0.1)`;
       for (let c = 0; c <= cols; c++) {
         for (let r = 0; r <= rows; r++) {
           ctx.beginPath();
-          ctx.arc(c * gridSpacing, r * gridSpacing, 2.5, 0, Math.PI * 2);
+          ctx.arc(c * gridSpacing, r * gridSpacing, 2, 0, Math.PI * 2);
           ctx.fill();
         }
       }
@@ -122,7 +122,7 @@ function CloudPulseGrid({
         const life = (f.t - performance.now()) / 500;
         ctx.beginPath();
         ctx.fillStyle = `rgba(${rgb},${(0.8 * life).toFixed(2)})`;
-        ctx.arc(f.x, f.y, 5 + (1 - life) * 10, 0, Math.PI * 2);
+        ctx.arc(f.x, f.y, 4 + (1 - life) * 6, 0, Math.PI * 2);
         ctx.fill();
       });
 
@@ -154,35 +154,35 @@ function CloudPulseGrid({
           }
 
           p.trail.push({ x: p.x, y: p.y });
-          if (p.trail.length > 12) p.trail.shift();
+          if (p.trail.length > 10) p.trail.shift();
 
           if (p.x < -20 || p.x > width + 20 || p.y < -20 || p.y > height + 20) {
             Object.assign(p, makePulse());
           }
         }
 
-        // draw trail
+        // draw trail (Smaller points)
         for (let i = 0; i < p.trail.length; i++) {
           const t = p.trail[i];
-          const alpha = ((i + 1) / p.trail.length) * 0.9;
+          const alpha = ((i + 1) / p.trail.length) * 0.8;
           ctx.beginPath();
           ctx.fillStyle = `rgba(${rgb},${alpha.toFixed(2)})`;
-          ctx.arc(t.x, t.y, 2.5, 0, Math.PI * 2);
+          ctx.arc(t.x, t.y, 1.4, 0, Math.PI * 2);
           ctx.fill();
         }
 
-        // glowing head
+        // glowing head (Reduced size)
         ctx.beginPath();
-        const grad = ctx.createRadialGradient(p.x, p.y, 0, p.x, p.y, 14);
+        const grad = ctx.createRadialGradient(p.x, p.y, 0, p.x, p.y, 8);
         grad.addColorStop(0, `rgba(${rgb},1)`);
         grad.addColorStop(1, `rgba(${rgb},0)`);
         ctx.fillStyle = grad;
-        ctx.arc(p.x, p.y, 14, 0, Math.PI * 2);
+        ctx.arc(p.x, p.y, 8, 0, Math.PI * 2);
         ctx.fill();
 
         ctx.beginPath();
         ctx.fillStyle = `rgba(${rgb},1)`;
-        ctx.arc(p.x, p.y, 3.5, 0, Math.PI * 2);
+        ctx.arc(p.x, p.y, 2, 0, Math.PI * 2);
         ctx.fill();
       });
 
