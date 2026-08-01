@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import styles from './GradientButton.module.css';
 
 export default function BreakButton() {
   return (
