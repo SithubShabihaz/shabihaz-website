@@ -4,6 +4,7 @@ import type { NextConfig } from "next";
 const nextConfig = {
   // output: 'export',
   images: {
+    minimumCacheTTL: 31536000,
     remotePatterns: [
       {
         protocol: 'https',
