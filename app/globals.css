@@ -71,51 +71,6 @@ span{
     text-shadow: 0 0 4px rgba(34, 211, 238, 0.3);
 }
 
-/* ============================================
-   GRADIENT LIGHTING BUTTON WITH ANIMATION
-   ============================================ */
-
-.gradient-btn {
-    position: relative;
-    padding: 0px;
-    border-radius: 1rem;
-    transition: all 0.3s ease;
-    box-shadow: 0 0 15px rgba(139, 92, 246, 0.3);
-}
-
-.gradient-btn:hover {
-    transform: scale(1.02);
-    box-shadow: 0 0 30px rgba(139, 92, 246, 0.5);
-}
-
-/* Animated gradient movement */
-@keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
-
-.animate-gradient {
-    background-size: 200% 200%;
-    animation: gradient 3s ease infinite;
-}
-
-/* Optional: Pulsing glow effect */
-@keyframes pulseGlow {
-    0%, 100% {
-        opacity: 0.3;
-    }
-    50% {
-        opacity: 0.6;
-    }
-}
-
 .gradient-btn {
     animation: pulseGlow 2s ease-in-out infinite;
 }
