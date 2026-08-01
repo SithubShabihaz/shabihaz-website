@@ -78,7 +78,7 @@ export default function TechMockupLayout() {
           <div className="lg:col-span-6 flex justify-center items-center relative py-4 lg:py-0 order-1 lg:order-2">
             <div className="relative w-full h-auto flex items-center justify-center transition-transform duration-300 hover:scale-[1.01]">
               <Image 
-                src={`${process.env.NEXT_PUBLIC_MEDIA_URL}/About-Page-Images/AboutPageMobileMockup.png`}
+                src={`${process.env.NEXT_PUBLIC_MEDIA_URL}/About-Page-Images/AboutPageMobileMockup.webp`}
                 alt="About Page Mobile Mockup"
                 width={1200} // Increased base resolution scale for clear rendering at big sizes
                 height={850}
