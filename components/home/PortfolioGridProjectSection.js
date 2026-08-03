@@ -16,11 +16,11 @@ const row1 = [
 // Row 2 Assets (Moving Right)
 const row2 = [
   { id: 7, alt: "Travel Website", img: `${process.env.NEXT_PUBLIC_MEDIA_URL}/Home%20Page%20Images/TravelWebsiteMockup.png` },
-  { id: 8, alt: "GYM Website", img: `${process.env.NEXT_PUBLIC_MEDIA_URL}/Home%20Page%20Images/GYMWebsiteDesign.png` },
+  { id: 8, alt: "GYM Website", img: `${process.env.NEXT_PUBLIC_MEDIA_URL}/Home%20Page%20Images/GYMWebsiteDesign.webp` },
   { id: 9, alt: "Healthy Snacks Website", img: `${process.env.NEXT_PUBLIC_MEDIA_URL}/Home%20Page%20Images/HealthySnacksCommerce.png` },
   { id: 10, alt: "Dental Website", img: `${process.env.NEXT_PUBLIC_MEDIA_URL}/Home%20Page%20Images/DentalWebsite.png` },
   { id: 11, alt: "Realtor Website", img: `${process.env.NEXT_PUBLIC_MEDIA_URL}/Home%20Page%20Images/RealtorWebsite.png` },
-  { id: 12, alt: "GYM Website", img: `${process.env.NEXT_PUBLIC_MEDIA_URL}/Home%20Page%20Images/GYMWebsiteDesign.png` },
+  { id: 12, alt: "GYM Website", img: `${process.env.NEXT_PUBLIC_MEDIA_URL}/Home%20Page%20Images/GYMWebsiteDesign.webp` },
 ];
 
 export default function HorizontalShowcase() {
