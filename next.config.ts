@@ -7,7 +7,7 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'pub-121a2da4a287498fb3836684e0a72244.r2.dev', // Yahan apna r2.dev wala hostname likhein
+        hostname: 'https://cdn.shabihaz.com', // Yahan apna r2.dev wala hostname likhein
       },
     ],
 
