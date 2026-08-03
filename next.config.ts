@@ -10,6 +10,8 @@ const nextConfig = {
         hostname: 'pub-121a2da4a287498fb3836684e0a72244.r2.dev', // Yahan apna r2.dev wala hostname likhein
       },
     ],
+
+    minimumCacheTTL: 31536000,
   },
 };
 
