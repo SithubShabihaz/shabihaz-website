@@ -15,37 +15,37 @@ export default function PortfolioShowcaseGrid() {
       title: "Education Website",
       subTitle: "Delivering Pro Courses",
       clientOrigin: "UK",
-      mockupUrl: `${process.env.NEXT_PUBLIC_MEDIA_URL}/Portfolio-Page-Image/EducationalPortfolio.png`,
+      mockupUrl: `${process.env.NEXT_PUBLIC_MEDIA_URL}/Portfolio-Page-Image/EducationalPortfolio.webp`,
     },
     {
       title: "Furniture E-Commerce Website",
       subTitle: "Furniture E-Commerce Store",
       clientOrigin: "Saudi Arab",
-      mockupUrl: `${process.env.NEXT_PUBLIC_MEDIA_URL}/Portfolio-Page-Image/FurniturePortfolio.png`,
+      mockupUrl: `${process.env.NEXT_PUBLIC_MEDIA_URL}/Portfolio-Page-Image/FurniturePortfolio.webp`,
     },
     {
       title: "GYM Website",
       subTitle: "Transform your body with GYM.",
       clientOrigin: "Pakistan",
-      mockupUrl: `${process.env.NEXT_PUBLIC_MEDIA_URL}/Portfolio-Page-Image/GYMPortfolio.png`,
+      mockupUrl: `${process.env.NEXT_PUBLIC_MEDIA_URL}/Portfolio-Page-Image/GYMPortfolio.webp`,
     },
     {
       title: "Realtor Website",
       subTitle: "Find your home.",
       clientOrigin: "Pakistan",
-      mockupUrl: `${process.env.NEXT_PUBLIC_MEDIA_URL}/Portfolio-Page-Image/RealtorPortfolio.png`,
+      mockupUrl: `${process.env.NEXT_PUBLIC_MEDIA_URL}/Portfolio-Page-Image/RealtorPortfolio.webp`,
     },
     {
       title: "Flowers Ecommerce Website",
       subTitle: "Order fresh flowers.",
       clientOrigin: "Saudi Arab",
-      mockupUrl: `${process.env.NEXT_PUBLIC_MEDIA_URL}/Portfolio-Page-Image/FlowerPortfolio.png`,
+      mockupUrl: `${process.env.NEXT_PUBLIC_MEDIA_URL}/Portfolio-Page-Image/FlowerPortfolio.webp`,
     },
     {
       title: "Snacks Ecommerce Website",
       subTitle: "Shop healthy snacks.",
       clientOrigin: "Pakistan",
-      mockupUrl: `${process.env.NEXT_PUBLIC_MEDIA_URL}/Portfolio-Page-Image/SnacksPortfolio.png`,
+      mockupUrl: `${process.env.NEXT_PUBLIC_MEDIA_URL}/Portfolio-Page-Image/SnacksPortfolio.webp`,
     }
   ];
 
