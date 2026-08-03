@@ -4,13 +4,13 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 const integrationTools = [
-  { id: 1, name: 'React JS', logo: `${process.env.NEXT_PUBLIC_MEDIA_URL}/Home%20Page%20Images/react.png` },
-  { id: 2, name: 'Next JS', logo: `${process.env.NEXT_PUBLIC_MEDIA_URL}/Home%20Page%20Images/nextjs-13.svg` },
-  { id: 3, name: 'Make.com', logo: `${process.env.NEXT_PUBLIC_MEDIA_URL}/Home%20Page%20Images/make-logo-rgb-3.svg` },
-  { id: 4, name: 'Wordpress', logo: `${process.env.NEXT_PUBLIC_MEDIA_URL}/Home%20Page%20Images/wordpress-2.svg` },
-  { id: 5, name: 'Shopify', logo: `${process.env.NEXT_PUBLIC_MEDIA_URL}/Home%20Page%20Images/shopify.svg` },
-  { id: 6, name: 'N8n', logo: `${process.env.NEXT_PUBLIC_MEDIA_URL}/Home%20Page%20Images/n8n-pinkblack.svg` },
-  { id: 7, name: 'Python', logo: `${process.env.NEXT_PUBLIC_MEDIA_URL}/Home%20Page%20Images/python-5.svg` }, // Fixed duplicate key id from 6 to 7
+  { id: 1, name: 'React JS', logo: `${process.env.NEXT_PUBLIC_MEDIA_URL}/Home%20Page%20Images/react.webp` },
+  { id: 2, name: 'Next JS', logo: `${process.env.NEXT_PUBLIC_MEDIA_URL}/Home%20Page%20Images/nextjs-13.webp` },
+  { id: 3, name: 'Make.com', logo: `${process.env.NEXT_PUBLIC_MEDIA_URL}/Home%20Page%20Images/make-logo-rgb-3.webp` },
+  { id: 4, name: 'Wordpress', logo: `${process.env.NEXT_PUBLIC_MEDIA_URL}/Home%20Page%20Images/wordpress-2.webp` },
+  { id: 5, name: 'Shopify', logo: `${process.env.NEXT_PUBLIC_MEDIA_URL}/Home%20Page%20Images/shopify.webp` },
+  { id: 6, name: 'N8n', logo: `${process.env.NEXT_PUBLIC_MEDIA_URL}/Home%20Page%20Images/n8n-pinkblack.webp` },
+  { id: 7, name: 'Python', logo: `${process.env.NEXT_PUBLIC_MEDIA_URL}/Home%20Page%20Images/python-5.webp` }, // Fixed duplicate key id from 6 to 7
 ];
 
 export default function RotatingToolsCarousel() {
