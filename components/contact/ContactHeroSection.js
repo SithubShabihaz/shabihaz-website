@@ -67,7 +67,7 @@ export default function ContactHeroAdvanced() {
         <div className="lg:col-span-6 w-full flex justify-center lg:justify-start relative">
           <div className="w-full max-w-xl relative aspect-[4/3]">
             <Image 
-              src={`${process.env.NEXT_PUBLIC_MEDIA_URL}/Contact-Page-Images/ContactUsPageMobileMockup.png`}
+              src={`${process.env.NEXT_PUBLIC_MEDIA_URL}/Contact-Page-Images/ContactUsPageMobileMockup.webp`}
               alt="System Integration Layout Blueprint Showcase"
               fill
               sizes="(max-w-7xl) 50vw"
