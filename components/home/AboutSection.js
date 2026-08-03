@@ -39,7 +39,7 @@ const AboutUsSection = () => {
         <div className="lg:col-span-6 w-full flex items-center justify-center relative">
           <div className="relative w-full max-w-[450px] aspect-square flex items-center justify-center transition-transform duration-300 hover:scale-105">
             <Image 
-              src={`${process.env.NEXT_PUBLIC_MEDIA_URL}/Home%20Page%20Images/HomePageAboutSectionMobileMockup.png`}
+              src={`${process.env.NEXT_PUBLIC_MEDIA_URL}/Home%20Page%20Images/HomePageAboutSectionMobileMockup.webp`}
               alt="AboutUs 3D Smartphone Mockup"
               width={500}
               height={500}
