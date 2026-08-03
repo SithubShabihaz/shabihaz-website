@@ -9,21 +9,21 @@ export default function AsymmetricTeamSection() {
       name: 'SHABIHA.Z',
       role: 'CO-FOUNDER',
       company: 'SHABIHAZ TECH COMPANY',
-      image: `${process.env.NEXT_PUBLIC_MEDIA_URL}/About-Page-Images/photo_2026-06-21_15-32-13.jpg`,
+      image: `${process.env.NEXT_PUBLIC_MEDIA_URL}/About-Page-Images/photo_2026-06-21_15-32-13.webp`,
       isSpotlight: false,
     },
     {
       name: 'Wasim',
       role: 'CO-FOUNDER',
       company: 'SHABIHAZ TECH COMPANY',
-      image: `${process.env.NEXT_PUBLIC_MEDIA_URL}/About-Page-Images/photo_2026-06-21_15-32-04.jpg`,
+      image: `${process.env.NEXT_PUBLIC_MEDIA_URL}/About-Page-Images/photo_2026-06-21_15-32-04.webp`,
       isSpotlight: true, // Center card gets the inverted highlighted look
     },
     {
       name: 'Aayan',
       role: 'WEB DEVELOPER',
       company: 'SHABIHAZ TECH COMPANY',
-      image: `${process.env.NEXT_PUBLIC_MEDIA_URL}/About-Page-Images/photo_2026-06-21_15-32-19.jpg`,
+      image: `${process.env.NEXT_PUBLIC_MEDIA_URL}/About-Page-Images/photo_2026-06-21_15-32-19.webp`,
       isSpotlight: false,
     }
   ];
