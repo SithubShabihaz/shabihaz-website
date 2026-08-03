@@ -5,21 +5,21 @@ import { motion } from 'framer-motion';
 
 // Row 1 Assets (Moving Left)
 const row1 = [
-  { id: 1, alt: "Medical Website", img: `${process.env.NEXT_PUBLIC_MEDIA_URL}/Home%20Page%20Images/Medixo-Website-Banner.png` },
-  { id: 2, alt: "Furniture Website", img: `${process.env.NEXT_PUBLIC_MEDIA_URL}/Home%20Page%20Images/Furniture-Ecommerce-Banner.png` },
-  { id: 3, alt: "Portfolio Website", img: `${process.env.NEXT_PUBLIC_MEDIA_URL}/Home%20Page%20Images/Portfoliowebsite.png` },
-  { id: 4, alt: "Flowers Website", img: `${process.env.NEXT_PUBLIC_MEDIA_URL}/Home%20Page%20Images/FlowersEcommerceMockup.png` },
-  { id: 5, alt: "Educational Website", img: `${process.env.NEXT_PUBLIC_MEDIA_URL}/Home%20Page%20Images/LearnixWebsite.png` },
-  { id: 6, alt: "Fashion Website", img: `${process.env.NEXT_PUBLIC_MEDIA_URL}/Home%20Page%20Images/NoveliaEcommerceWebsite.png` },
+  { id: 1, alt: "Medical Website", img: `${process.env.NEXT_PUBLIC_MEDIA_URL}/Home%20Page%20Images/Medixo-Website-Banner.webp` },
+  { id: 2, alt: "Furniture Website", img: `${process.env.NEXT_PUBLIC_MEDIA_URL}/Home%20Page%20Images/Furniture-Ecommerce-Banner.webp` },
+  { id: 3, alt: "Portfolio Website", img: `${process.env.NEXT_PUBLIC_MEDIA_URL}/Home%20Page%20Images/Portfoliowebsite.webp` },
+  { id: 4, alt: "Flowers Website", img: `${process.env.NEXT_PUBLIC_MEDIA_URL}/Home%20Page%20Images/FlowersEcommerceMockup.webp` },
+  { id: 5, alt: "Educational Website", img: `${process.env.NEXT_PUBLIC_MEDIA_URL}/Home%20Page%20Images/LearnixWebsite.webp` },
+  { id: 6, alt: "Fashion Website", img: `${process.env.NEXT_PUBLIC_MEDIA_URL}/Home%20Page%20Images/NoveliaEcommerceWebsite.webp` },
 ];
 
 // Row 2 Assets (Moving Right)
 const row2 = [
-  { id: 7, alt: "Travel Website", img: `${process.env.NEXT_PUBLIC_MEDIA_URL}/Home%20Page%20Images/TravelWebsiteMockup.png` },
+  { id: 7, alt: "Travel Website", img: `${process.env.NEXT_PUBLIC_MEDIA_URL}/Home%20Page%20Images/TravelWebsiteMockup.webp` },
   { id: 8, alt: "GYM Website", img: `${process.env.NEXT_PUBLIC_MEDIA_URL}/Home%20Page%20Images/GYMWebsiteDesign.webp` },
-  { id: 9, alt: "Healthy Snacks Website", img: `${process.env.NEXT_PUBLIC_MEDIA_URL}/Home%20Page%20Images/HealthySnacksCommerce.png` },
-  { id: 10, alt: "Dental Website", img: `${process.env.NEXT_PUBLIC_MEDIA_URL}/Home%20Page%20Images/DentalWebsite.png` },
-  { id: 11, alt: "Realtor Website", img: `${process.env.NEXT_PUBLIC_MEDIA_URL}/Home%20Page%20Images/RealtorWebsite.png` },
+  { id: 9, alt: "Healthy Snacks Website", img: `${process.env.NEXT_PUBLIC_MEDIA_URL}/Home%20Page%20Images/HealthySnacksCommerce.webp` },
+  { id: 10, alt: "Dental Website", img: `${process.env.NEXT_PUBLIC_MEDIA_URL}/Home%20Page%20Images/DentalWebsite.webp` },
+  { id: 11, alt: "Realtor Website", img: `${process.env.NEXT_PUBLIC_MEDIA_URL}/Home%20Page%20Images/RealtorWebsite.webp` },
   { id: 12, alt: "GYM Website", img: `${process.env.NEXT_PUBLIC_MEDIA_URL}/Home%20Page%20Images/GYMWebsiteDesign.webp` },
 ];
 
