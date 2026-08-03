@@ -42,7 +42,7 @@ export default function FeaturedProjectShowcase() {
               
               {/* Dynamic Next.js Asset Rendering Layer */}
               <Image 
-                src={`${process.env.NEXT_PUBLIC_MEDIA_URL}/Portfolio-Page-Image/PortfolioPageFeaturedMockup.png`} // <-- Change to your actual dashboard or ecommerce asset screen image path
+                src={`${process.env.NEXT_PUBLIC_MEDIA_URL}/Portfolio-Page-Image/PortfolioPageFeaturedMockup.webp`} // <-- Change to your actual dashboard or ecommerce asset screen image path
                 alt="Featured Image"
                 fill
                 sizes="(max-w-7xl) 50vw"
