@@ -1,5 +1,10 @@
 @import 'tailwindcss';
 
+@theme {
+  --font-poppins: var(--font-poppins), sans-serif;
+  --font-rajdhani: var(--font-rajdhani), sans-serif;
+}
+
 /* Sirf Basic Website Structure */
 body {
   background-color: black;
