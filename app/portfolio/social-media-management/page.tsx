@@ -1,11 +1,13 @@
 import Image from "next/image";
 import HeroSection from '@/components/social-media-management/HeroSection';
-import SocialProjects from '@/components/social-media-management/SocialProjects';
-import AutoCarousel from '@/components/social-media-management/AutoCarousel';
-import GraphSection from '@/components/social-media-management/GraphSection';
-import SocialBottom from '@/components/social-media-management/SocialBottom';
-import SocialReel from '@/components/social-media-management/SocialReel';
-import Footer from '@/components/Footer';
+
+import dynamic from 'next/dynamic';
+const SocialProjects = dynamic(() => import('@/components/social-media-management/SocialProjects'));
+const AutoCarousel = dynamic(() => import('@/components/social-media-management/AutoCarousel'));
+const GraphSection = dynamic(() => import('@/components/social-media-management/GraphSection'));
+const SocialBottom = dynamic(() => import('@/components/social-media-management/SocialBottom'));
+const SocialReel = dynamic(() => import('@/components/social-media-management/SocialReel'));
+const Footer = dynamic(() => import('@/components/Footer'));
 
 export default function About() {
   return (
