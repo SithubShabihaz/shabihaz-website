@@ -1,10 +1,12 @@
 import Image from "next/image";
 import PortfolioHeroSection from '@/components/portfolio/PortfolioHeroSection';
-import PortfolioPageProjectSection from '@/components/portfolio/PortfolioPageProjectSection';
-import PortfolioFeaturedSection from '@/components/portfolio/PortfolioFeaturedSection';
-import PortfolioTestimonialSection from '@/components/portfolio/PortfolioTestimonialSection';
-import PortfolioPageBottomSection from '@/components/portfolio/PortfolioPageBottomSection.js';
-import Footer from '@/components/Footer';
+
+import dynamic from 'next/dynamic';
+const PortfolioPageProjectSection = dynamic(() => import('@/components/portfolio/PortfolioPageProjectSection'));
+const PortfolioFeaturedSection = dynamic(() => import('@/components/portfolio/PortfolioFeaturedSection'));
+const PortfolioTestimonialSection = dynamic(() => import('@/components/portfolio/PortfolioTestimonialSection'));
+const PortfolioPageBottomSection = dynamic(() => import('@/components/portfolio/PortfolioPageBottomSection'));
+const Footer = dynamic(() => import('@/components/Footer'));
 
 export default function About() {
   return (
