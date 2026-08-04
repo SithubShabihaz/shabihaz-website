@@ -1,7 +1,7 @@
 import Image from "next/image";
+import AboutHeroSection from '@/components/about/AboutHeroSection';
 
 import dynamic from 'next/dynamic';
-const AboutHeroSection = dynamic(() => import('@/components/about/AboutHeroSection'));
 const AboutTech = dynamic(() => import('@/components/about/AboutTech'));
 const AboutHeroSection = dynamic(() => import('@/components/about/AboutHeroSection'));
 const AboutTeamSection = dynamic(() => import('@/components/about/AboutTeamSection'));
