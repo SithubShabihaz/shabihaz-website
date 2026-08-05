@@ -10,7 +10,7 @@ import ServiceWorkerRegister from "@/components/ServiceWorkerRegister";
 const poppins = Poppins({
   subsets: ['latin'],
   weight: ['200', '400', '600', '700'], 
-  variable: '--font-poppins-custom',
+  variable: '--font-poppins',
   display: 'swap',
 });
 
@@ -18,7 +18,7 @@ const poppins = Poppins({
 const rajdhani = Rajdhani({
   subsets: ['latin'],
   weight: ['400', '500', '600', '700'],
-  variable: '--font-rajdhani-custom',
+  variable: '--font-rajdhani',
   display: 'swap',
 });
 
@@ -59,9 +59,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    // Variables automatically yahan HTML tag main apply ho jayenge
     <html lang="en">
-      <body className={`${poppins.variable} ${rajdhani.variable}`}>
+      {/* 👇 YAHAN JADOO HAI: Humne rajdhani.className use kiya hai taake seedha font lag jaye! */}
+      <body className={`bg-black text-white ${rajdhani.className} ${poppins.variable}`}>
+        
+        {/* 👇 RED BANNER TRICK: Yeh check karne ke liye ke Vercel ne update kiya ya nahi */}
+        <div className="bg-red-600 text-white text-center p-3 font-bold z-50 relative">
+           Test 2.0: Agar aapko yeh laal patti nazar aa rahi hai, toh Vercel par code successfully update ho gaya hai!
+        </div>
+
         <Header />
         <ServiceWorkerRegister />
         <main className="flex-1"> 
