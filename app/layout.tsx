@@ -60,8 +60,8 @@ export default function RootLayout({
 }) {
   return (
     // Variables automatically yahan HTML tag main apply ho jayenge
-    <html lang="en" className={`${poppins.variable} ${rajdhani.variable}`}>
-      <body>
+    <html lang="en">
+      <body className={`${poppins.variable} ${rajdhani.variable}`}>
         <Header />
         <ServiceWorkerRegister />
         <main className="flex-1"> 
