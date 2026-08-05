@@ -10,7 +10,7 @@ import ServiceWorkerRegister from "@/components/ServiceWorkerRegister";
 const poppins = Poppins({
   subsets: ['latin'],
   weight: ['200', '400', '600', '700'], 
-  variable: '--font-poppins',
+  variable: '--font-poppins-custom',
   display: 'swap',
 });
 
@@ -18,7 +18,7 @@ const poppins = Poppins({
 const rajdhani = Rajdhani({
   subsets: ['latin'],
   weight: ['400', '500', '600', '700'],
-  variable: '--font-rajdhani',
+  variable: '--font-rajdhani-custom',
   display: 'swap',
 });
 
