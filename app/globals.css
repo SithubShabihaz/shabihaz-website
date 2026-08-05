@@ -2,21 +2,21 @@
 
 /* 1. YAHAN HUM TAAR JOR RAHE HAIN (Tailwind v4 Theming) */
 @theme {
-  --font-poppins: var(--font-poppins), sans-serif;
-  --font-rajdhani: var(--font-rajdhani), sans-serif;
+  --font-poppins: var(--font-poppins-custom), sans-serif;
+  --font-rajdhani: var(--font-rajdhani-custom), sans-serif;
 }
 
 /* 2. DEFAULT SETTING: Har baar class likhne ki zaroorat nahi! */
 @layer base {
   body {
     /* Poori website par by default Rajdhani font lag jayega */
-    font-family: var(--font-rajdhani), sans-serif;
+    font-family: var(--font-rajdhani-custom), sans-serif;
     background-color: black;
     color: white;
   }
 
   h1, h2, h3, h4, h5, h6 {
     /* Saari headings par by default Poppins font lag jayega */
-    font-family: var(--font-poppins), sans-serif;
+    font-family: var(--font-poppins-custom), sans-serif;
   }
 }
