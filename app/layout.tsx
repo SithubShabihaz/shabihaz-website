@@ -9,6 +9,7 @@ import ServiceWorkerRegister from "@/components/ServiceWorkerRegister";
 const poppins = Poppins({
   subsets: ['latin'],
   weight: ['200', '400', '600', '700'], 
+  variable: '--font-poppins',
   display: 'swap',
 });
 
@@ -16,6 +17,7 @@ const poppins = Poppins({
 const rajdhani = Rajdhani({
   subsets: ['latin'],
   weight: ['400', '500', '600', '700'],
+  variable: '--font-rajdhani',
   display: 'swap',
 });
 
@@ -38,9 +40,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    // 👇 Yahan humne rajdhani.className ko direct body par laga diya hai
-    <html lang="en">
-      <body className={`bg-black text-white ${rajdhani.className}`}>
+    // Image ke mutabiq html tag mein variables inject kar diye gaye hain
+    <html lang="en" className={`${poppins.variable} ${rajdhani.variable}`}>
+      <body className="bg-black text-white">
         <Header />
         <ServiceWorkerRegister />
         <main className="flex-1"> 
