@@ -6,11 +6,11 @@
   --font-rajdhani: 'Rajdhani', sans-serif;
 }
 
-/* Yeh rule Tailwind ke default reset ko override kar dega */
+/* Yeh rule Tailwind ke default reset ko override karke Google Fonts ko force karega */
 body {
-  font-family: var(--font-rajdhani), sans-serif !important;
+  font-family: 'Rajdhani', sans-serif !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-poppins), sans-serif !important;
+  font-family: 'Poppins', sans-serif !important;
 }
