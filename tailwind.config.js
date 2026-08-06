@@ -7,14 +7,13 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        poppins: ['var(--font-poppins)', 'sans-serif'],
-        rajdhani: ['var(--font-rajdhani)', 'sans-serif'],
+        // 👇 Yahan humne direct font names de diye hain taake conflict khatam ho jaye
+        poppins: ['Poppins', 'sans-serif'],
+        rajdhani: ['Rajdhani', 'sans-serif'],
       },
-      // 👇 YAHAN ADD KIYA HAI: Gradient ko move karne ke liye space
       backgroundSize: {
         '200%': '200% 200%',
       },
-      // Saari Custom Animations yahan define ki gayi hain
       animation: {
         'marquee-up': 'marqueeUp 55s linear infinite',
         'marquee-down': 'marqueeDown 55s linear infinite',
@@ -34,7 +33,6 @@ module.exports = {
         'bounce-custom': 'bounce 2s ease-in-out infinite',
         'ping-custom': 'ping 1s cubic-bezier(0, 0, 0.2, 1) infinite',
       },
-      // Saare Keyframes rules yahan define kiye gaye hain
       keyframes: {
         marqueeUp: {
           '0%': { transform: 'translate3d(0, 0%, 0)' },
@@ -92,7 +90,6 @@ module.exports = {
     },
   },
   plugins: [
-    // Custom plugin taake pure Divi 3D layout matrix ka structural view standard utilities ke sath maintain ho sake
     function ({ addUtilities }) {
       addUtilities({
         '.perspective-1200': {
