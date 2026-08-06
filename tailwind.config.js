@@ -7,9 +7,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        // 👇 Yahan humne direct font names de diye hain taake conflict khatam ho jaye
-        poppins: ["var(--font-poppins)"],
-        rajdhani: ["var(--font-rajdhani)"],
+        // 👇 Google Fonts ke direct naam yahan set kar diye gaye hain
+        poppins: ["Poppins", "sans-serif"],
+        rajdhani: ["Rajdhani", "sans-serif"],
       },
       backgroundSize: {
         '200%': '200% 200%',
