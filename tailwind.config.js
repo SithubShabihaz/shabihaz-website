@@ -8,8 +8,8 @@ module.exports = {
     extend: {
       fontFamily: {
         // 👇 Google Fonts ke direct naam yahan set kar diye gaye hain
-        poppins: ["Poppins", "sans-serif"],
-        rajdhani: ["Rajdhani", "sans-serif"],
+        poppins: ["var(--font-poppins)", "sans-serif"],
+        rajdhani: ["var(--font-rajdhani)", "sans-serif"],
       },
       backgroundSize: {
         '200%': '200% 200%',
