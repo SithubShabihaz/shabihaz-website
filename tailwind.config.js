@@ -8,8 +8,8 @@ module.exports = {
     extend: {
       fontFamily: {
         // 👇 Yahan humne direct font names de diye hain taake conflict khatam ho jaye
-        poppins: ['Poppins', 'sans-serif'],
-        rajdhani: ['Rajdhani', 'sans-serif'],
+        poppins: ["var(--font-poppins)"],
+        rajdhani: ["var(--font-rajdhani)"],
       },
       backgroundSize: {
         '200%': '200% 200%',
