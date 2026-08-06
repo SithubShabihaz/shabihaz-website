@@ -1,30 +1,8 @@
 // app/layout.tsx
 import type { Metadata } from "next";
-import localFont from "next/font/local"; 
 import "./globals.css";
 import Header from "@/components/Header";
 import ServiceWorkerRegister from "@/components/ServiceWorkerRegister";
-
-// Local Poppins font setup (Headings ke liye)
-const poppins = localFont({
-  src: [
-    { path: '../public/fonts/Poppins-Regular.ttf', weight: '400'},
-    { path: '../public/fonts/Poppins-SemiBold.ttf', weight: '600'},
-    { path: '../public/fonts/Poppins-Bold.ttf', weight: '700'},
-  ],
-  variable: '--font-poppins',
-});
-
-// Local Rajdhani font setup (Poori body / text ke liye)
-const rajdhani = localFont({
-  src: [
-    { path: '../public/fonts/Rajdhani-Regular.ttf', weight: '400'},
-    { path: '../public/fonts/Rajdhani-Medium.ttf', weight: '500'},
-    { path: '../public/fonts/Rajdhani-SemiBold.ttf', weight: '600'},
-    { path: '../public/fonts/Rajdhani-Bold.ttf', weight: '700'},
-  ],
-  variable: '--font-rajdhani',
-});
 
 export const metadata: Metadata = {
   title: "Shabihaz | Full Stack Developer & AI Automation Specialist",
@@ -45,11 +23,24 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${poppins.variable} ${rajdhani.variable}`}>
-      <body 
-        className={`bg-black text-white ${rajdhani.className}`}
-        style={{ fontFamily: 'var(--font-rajdhani), sans-serif' }}
-      >
+    <html lang="en">
+      <head>
+        {/* Google Fonts Preconnect for Lightning Fast Performance */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet" />
+        
+        {/* Forcefully applying both fonts so they never fail on hard refresh */}
+        <style>{`
+          body {
+            font-family: 'Rajdhani', sans-serif !important;
+          }
+          h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif !important;
+          }
+        `}</style>
+      </head>
+      <body className="bg-black text-white">
         <Header />
         <ServiceWorkerRegister />
         <main className="flex-1"> 
