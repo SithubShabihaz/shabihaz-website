@@ -5,19 +5,17 @@ import "./globals.css";
 import Header from "@/components/Header";
 import ServiceWorkerRegister from "@/components/ServiceWorkerRegister";
 
-// Poppins font setup
+// Poppins font setup (Headings ke liye)
 const poppins = Poppins({
   subsets: ['latin'],
   weight: ['200', '400', '600', '700'], 
-  variable: '--font-poppins',
   display: 'swap',
 });
 
-// Rajdhani font setup
+// Rajdhani font setup (Poori body / text ke liye)
 const rajdhani = Rajdhani({
   subsets: ['latin'],
   weight: ['400', '500', '600', '700'],
-  variable: '--font-rajdhani',
   display: 'swap',
 });
 
@@ -40,16 +38,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    // HTML tag mein variables inject ho rahe hain
-    <html lang="en" className={`${poppins.variable} ${rajdhani.variable}`}>
-      {/* 👇 YAHAN CHANGE KIYA HAI: Direct inline style ya sahi Tailwind class */}
-      <body 
-        className="bg-black text-white"
-        style={{ fontFamily: 'var(--font-rajdhani), sans-serif' }}
-      >
+    // 👇 Yahan humne rajdhani.className ko direct body par laga diya hai
+    <html lang="en">
+      <body className={`bg-black text-white ${rajdhani.className}`}>
         <Header />
         <ServiceWorkerRegister />
-        <main className="flex-1" style={{ fontFamily: 'var(--font-rajdhani), sans-serif' }}> 
+        <main className="flex-1"> 
           {children}
         </main>
       </body>
