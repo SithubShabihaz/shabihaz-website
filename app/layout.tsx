@@ -8,24 +8,22 @@ import ServiceWorkerRegister from "@/components/ServiceWorkerRegister";
 // Local Poppins font setup (Headings ke liye)
 const poppins = localFont({
   src: [
-    { path: '../public/fonts/Poppins-Regular.ttf', weight: '400', style: 'normal' },
-    { path: '../public/fonts/Poppins-SemiBold.ttf', weight: '600', style: 'normal' },
-    { path: '../public/fonts/Poppins-Bold.ttf', weight: '700', style: 'normal' },
+    { path: '../public/fonts/Poppins-Regular.ttf', weight: '400'},
+    { path: '../public/fonts/Poppins-SemiBold.ttf', weight: '600'},
+    { path: '../public/fonts/Poppins-Bold.ttf', weight: '700'},
   ],
   variable: '--font-poppins',
-  display: 'swap',
 });
 
 // Local Rajdhani font setup (Poori body / text ke liye)
 const rajdhani = localFont({
   src: [
-    { path: '../public/fonts/Rajdhani-Regular.ttf', weight: '400', style: 'normal' },
-    { path: '../public/fonts/Rajdhani-Medium.ttf', weight: '500', style: 'normal' },
-    { path: '../public/fonts/Rajdhani-SemiBold.ttf', weight: '600', style: 'normal' },
-    { path: '../public/fonts/Rajdhani-Bold.ttf', weight: '700', style: 'normal' },
+    { path: '../public/fonts/Rajdhani-Regular.ttf', weight: '400'},
+    { path: '../public/fonts/Rajdhani-Medium.ttf', weight: '500'},
+    { path: '../public/fonts/Rajdhani-SemiBold.ttf', weight: '600'},
+    { path: '../public/fonts/Rajdhani-Bold.ttf', weight: '700'},
   ],
   variable: '--font-rajdhani',
-  display: 'swap',
 });
 
 export const metadata: Metadata = {
