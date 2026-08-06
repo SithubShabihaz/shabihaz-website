@@ -40,11 +40,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
+    // HTML tag mein variables inject ho rahe hain
     <html lang="en" className={`${poppins.variable} ${rajdhani.variable}`}>
-      <body className="bg-black text-white font-rajdhani">
+      {/* 👇 YAHAN CHANGE KIYA HAI: Direct inline style ya sahi Tailwind class */}
+      <body 
+        className="bg-black text-white"
+        style={{ fontFamily: 'var(--font-rajdhani), sans-serif' }}
+      >
         <Header />
         <ServiceWorkerRegister />
-        <main className="flex-1"> 
+        <main className="flex-1" style={{ fontFamily: 'var(--font-rajdhani), sans-serif' }}> 
           {children}
         </main>
       </body>
