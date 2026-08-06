@@ -1,21 +1,30 @@
 // app/layout.tsx
 import type { Metadata } from "next";
-import { Poppins, Rajdhani } from "next/font/google"; 
+import localFont from "next/font/local"; 
 import "./globals.css";
 import Header from "@/components/Header";
 import ServiceWorkerRegister from "@/components/ServiceWorkerRegister";
 
-// Poppins font setup (Headings ke liye)
-const poppins = Poppins({
-  subsets: ['latin'],
-  weight: ['200', '400', '600', '700'], 
+// Local Poppins font setup (Headings ke liye)
+const poppins = localFont({
+  src: [
+    { path: '../public/fonts/Poppins-Regular.ttf', weight: '400', style: 'normal' },
+    { path: '../public/fonts/Poppins-SemiBold.ttf', weight: '600', style: 'normal' },
+    { path: '../public/fonts/Poppins-Bold.ttf', weight: '700', style: 'normal' },
+  ],
+  variable: '--font-poppins',
   display: 'swap',
 });
 
-// Rajdhani font setup (Poori body / text ke liye)
-const rajdhani = Rajdhani({
-  subsets: ['latin'],
-  weight: ['400', '500', '600', '700'],
+// Local Rajdhani font setup (Poori body / text ke liye)
+const rajdhani = localFont({
+  src: [
+    { path: '../public/fonts/Rajdhani-Regular.ttf', weight: '400', style: 'normal' },
+    { path: '../public/fonts/Rajdhani-Medium.ttf', weight: '500', style: 'normal' },
+    { path: '../public/fonts/Rajdhani-SemiBold.ttf', weight: '600', style: 'normal' },
+    { path: '../public/fonts/Rajdhani-Bold.ttf', weight: '700', style: 'normal' },
+  ],
+  variable: '--font-rajdhani',
   display: 'swap',
 });
 
@@ -38,8 +47,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      {/* 👇 Yahan humne layout.tsx ke andar direct rajdhani.className aur style inject kar diya hai */}
+    <html lang="en" className={`${poppins.variable} ${rajdhani.variable}`}>
       <body 
         className={`bg-black text-white ${rajdhani.className}`}
         style={{ fontFamily: 'var(--font-rajdhani), sans-serif' }}
