@@ -2,12 +2,12 @@
 
 @font-face {
   font-family: 'Rajdhani';
-  src: url('/fonts/Rajdhani-Regular.ttf') format('truetype');
+  src: url('../public/fonts/Rajdhani-Regular.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Poppins';
-  src: url('/fonts/Poppins-Regular.ttf') format('truetype');
+  src: url('../public/fonts/Poppins-Regular.ttf') format('truetype');
 }
 
 /* Yeh rule Tailwind ke default reset ko override karke Google Fonts ko force karega */
