@@ -6,10 +6,6 @@ module.exports = {
   ],
   theme: {
     extend: {
-      fontFamily: {
-        Poppins: 'Poppins',
-        Rajdhani: 'Rajdhani'
-      },
       backgroundSize: {
         '200%': '200% 200%',
       },
