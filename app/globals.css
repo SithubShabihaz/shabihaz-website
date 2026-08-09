@@ -1,9 +1,13 @@
 @import "tailwindcss";
 
-@theme {
-  --font-sans: 'Rajdhani', sans-serif;
-  --font-poppins: 'Poppins', sans-serif;
-  --font-rajdhani: 'Rajdhani', sans-serif;
+@font-face {
+  font-family: 'Rajdhani';
+  src: url('/fonts/Rajdhani-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins-Regular.ttf') format('truetype');
 }
 
 /* Yeh rule Tailwind ke default reset ko override karke Google Fonts ko force karega */
