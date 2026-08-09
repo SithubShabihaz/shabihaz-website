@@ -1,20 +1,10 @@
 @import "tailwindcss";
 
-@font-face {
-  font-family: 'Rajdhani';
-  src: url('../public/fonts/Rajdhani-Regular.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Poppins';
-  src: url('../public/fonts/Poppins-Regular.ttf') format('truetype');
-}
-
 /* Yeh rule Tailwind ke default reset ko override karke Google Fonts ko force karega */
 body {
-  font-family: 'Rajdhani', sans-serif !important;
+  font-family: var(--font-rajdhani), sans-serif !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: var(--font-poppins) !important;
 }
