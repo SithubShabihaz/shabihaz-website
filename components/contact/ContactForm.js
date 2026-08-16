@@ -189,7 +189,7 @@ export default function ContactFormWithValidation() {
                     alt={social.alt}
                     width={18}
                     height={18}
-                    unoptimized={true}
+                    loading="lazy"
                     className="object-contain hover:opacity-100 transition-opacity"
                   />
                 </a>
