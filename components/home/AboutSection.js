@@ -20,8 +20,8 @@ const AboutUsSection = () => {
             <h3 className="text-xs font-bold tracking-[0.25em] text-[#ffff39] uppercase font-rajdhani block">
               ABOUT US
             </h3>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white leading-[1.1] tracking-tight font-rajdhani">
-              Your Partners in <span className="text-[#ffff39] font-medium">Digital</span> Excellence
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white leading-[1.1] tracking-tight">
+              Your Partners in <span className="text-[#ffff39] font-light font-medium">Digital</span> Excellence
             </h2>
             <p className="text-white/90 text-sm md:text-base font-light leading-relaxed">
               At Shabihaz, we believe technology should simplify complexity. We bridge the gap between creative design and robust engineering, building custom digital experiences that help modern brands operate flawlessly and stand out in a competitive market.
