@@ -5,18 +5,29 @@
     --font-heading: var(--font-poppins);
 }
 
+/* =========================
+   FONT SYSTEM
+========================= */
+
+.font-rajdhani {
+    font-family: var(--font-rajdhani), sans-serif !important;
+}
+
+.font-poppins {
+    font-family: var(--font-poppins), sans-serif !important;
+}
+
+/* Default website font */
 html,
 body {
     margin: 0;
     padding: 0;
     background-color: #000 !important;
+    color: #fff;
+    font-family: var(--font-rajdhani), sans-serif !important;
 }
 
-body {
-    font-family: var(--font-body) !important;
-}
-
-/* Rajdhani — normal website text */
+/* Normal text */
 p,
 span,
 a,
@@ -26,15 +37,15 @@ input,
 textarea,
 select,
 label {
-    font-family: var(--font-rajdhani) !important;
+    font-family: var(--font-rajdhani), sans-serif !important;
 }
 
-/* Poppins — headings */
+/* Headings */
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-    font-family: var(--font-poppins) !important;
+    font-family: var(--font-poppins), sans-serif !important;
 }
