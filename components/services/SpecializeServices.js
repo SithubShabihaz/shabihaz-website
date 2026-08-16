@@ -126,7 +126,7 @@ export default function SpecializedSolutionsGrid() {
                 {/* Features Checkmark Bullet List Area */}
                 <ul className="space-y-3.5 mb-8">
                   {item.features.map((feature, idx) => (
-                    <li key={idx} className="flex items-start gap-3 text-left">
+                    <li key={idx} className="flex items-start gap-3 text-white text-left">
                       <div className="shrink-0 mt-0.5 w-4 h-4 rounded-full bg-[#ffff39]/10 border border-[#ffff39]/30 flex items-center justify-center text-[#ffff39]">
                         <Check className="w-2.5 h-2.5" strokeWidth={3} />
                       </div>
