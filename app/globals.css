@@ -1,15 +1,35 @@
 @import "tailwindcss";
 
-html {
-  background: #000 !important;
-  min-height: 100%;
+:root {
+    --font-body: var(--font-rajdhani);
+    --font-heading: var(--font-poppins);
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000 !important;
 }
 
 body {
-    background-color: #000;
-    font-family: var(--font-rajdhani), sans-serif !important;
+    font-family: var(--font-body) !important;
 }
 
+/* Rajdhani — normal website text */
+p,
+span,
+a,
+li,
+button,
+input,
+textarea,
+select,
+label {
+    font-family: var(--font-rajdhani) !important;
+}
+
+/* Poppins — headings */
 h1,
 h2,
 h3,
