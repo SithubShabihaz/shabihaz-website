@@ -3,7 +3,6 @@ import type { Metadata } from "next";
 import { poppins, rajdhani } from "./fonts";   // ← Yahan import kiya humne
 import "./globals.css";
 import Header from "@/components/Header.js";
-import ServiceWorkerRegister from "@/components/ServiceWorkerRegister";
 
 export const metadata: Metadata = {
   title: "Shabihaz | Full Stack Developer & AI Automation Specialist",
