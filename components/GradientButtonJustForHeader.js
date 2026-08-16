@@ -4,7 +4,7 @@ import React from 'react';
 
 export default function BreakButton() {
   return (
-    <div className="min-h-screen flex items-center justify-center p-8 px-0 font-sans">
+    <div className="flex items-center justify-center px-0 font-[var(--font-rajdhani)]">
       
       {/* Container for Button and Badge */}
       <div className="relative group cursor-pointer hover:scale-105 transition-transform duration-300">
