@@ -82,7 +82,7 @@ export default function AsymmetricTeamSection() {
                       src={member.image}
                       alt={member.name}
                       fill
-                      unoptimized={true}
+                      loading="lazy"
                       className={`object-cover object-top transition-transform duration-500 group-hover:scale-105 ${
                         member.isSpotlight ? 'opacity-90' : 'brightness-95 contrast-[1.02]'
                       }`}
