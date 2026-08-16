@@ -82,7 +82,7 @@ export default function TechMockupLayout() {
                 alt="About Page Mobile Mockup"
                 width={1200} // Increased base resolution scale for clear rendering at big sizes
                 height={850}
-                unoptimized={true}
+                loading="lazy"
                 className="w-full h-auto object-contain drop-shadow-[0_40px_70px_rgba(0,0,0,0.95)]"
                 priority
               />
