@@ -277,7 +277,7 @@ export default function App() {
 
                 {/* Hero Title */}
                 <div className="relative mt-6 w-full max-w-4xl mx-auto flex flex-col items-center justify-center mb-6 text-center">
-                    <span className="w-full font-[var(--font-rajdhani)] text-center text-5xl uppercase sm:text-6xl md:text-[160px] italic font-extrabold text-white tracking-tight leading-[1.1]">
+                    <span className="w-full text-center text-5xl uppercase sm:text-6xl md:text-[160px] italic font-extrabold text-white tracking-tight leading-[1.1]">
                         Shabihaz
                     </span>
                     <FadeinAnimation />
