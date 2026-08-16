@@ -27,7 +27,7 @@ export default function TextAnimation() {
   }, [words.length]);
 
   return (
-      <h2 className="text-1xl sm:text-2xl">
+      <h2 className="text-1xl text-white sm:text-2xl">
         providing{" "} <span
           className={`inline-block min-w-[200px] text-1xl sm:text-2xl text-[#ffff39] transition-opacity duration-500 ease-in-out ${
             fade ? "opacity-100" : "opacity-0"
