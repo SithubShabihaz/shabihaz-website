@@ -44,7 +44,6 @@ export default function RootLayout({
     <html lang="en" className={`${poppins.variable} ${rajdhani.variable}`}>
       <body>
         <Header />
-        <ServiceWorkerRegister />
         <main className="flex-1">   {/* ← YAHAN ADD KARO (main wrapper) */}
           {children}
         </main>
