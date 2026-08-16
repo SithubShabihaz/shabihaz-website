@@ -1,22 +1,5 @@
 @import "tailwindcss";
 
-:root {
-    --font-body: var(--font-rajdhani);
-    --font-heading: var(--font-poppins);
-}
-
-/* =========================
-   FONT SYSTEM
-========================= */
-
-.font-rajdhani {
-    font-family: var(--font-rajdhani), sans-serif !important;
-}
-
-.font-poppins {
-    font-family: var(--font-poppins), sans-serif !important;
-}
-
 /* Default website font */
 html,
 body {
