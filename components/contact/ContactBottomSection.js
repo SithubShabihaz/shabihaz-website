@@ -6,7 +6,7 @@ import { HelpCircle, ArrowRight, Calendar } from 'lucide-react';
 
 export default function ContactCTAAssessment() {
   return (
-    <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 md:px-8 py-12 font-poppins">
+    <div className="w-full max-w-7xl bg-black mx-auto px-4 sm:px-6 md:px-8 py-12 font-poppins">
       
       {/* ================= CORE BANNER CONTAINER ================= */}
       {/* Captures the premium, deep vibrant purple gradient aura from image {8DCF6F00-0AC0-4D2F-AC4A-BE2AEBD20A77}.jpg */}
